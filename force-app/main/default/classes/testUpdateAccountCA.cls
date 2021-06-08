@@ -1,27 +1,30 @@
-@isTest
-private class testUpdateAccountCA {
-    @isTest static void test() {
-        Account acc1 = new Account(Name = 'Test Account 1');
-        insert acc1;
-
-        Product2 pd1 = new Product2(Name = 'Chemise Verte longue XYX', Family = 'Chemise');
-        Insert pd1;
- 
-        //Create the PricebookEntry
-        PricebookEntry pbe = new PricebookEntry(
-            Pricebook2Id = Test.getStandardPricebookId(),
-            Product2Id = pd1.Id,
-            UnitPrice = 1020,
-            IsActive = true
-        );
-        Insert pbe;
-
-        Order o1 = new Order(AccountId = acc1.Id);
-        insert o1;
-
-        OrderItem oi1 = new OrderItemItem (OrderId = o1.Id, PricebookEntryId = pbe.Id, Quantity=10, UnitPrice = 150);
-        insert oi1;
-        OrderItem oi2 = new OrderItemItem (OrderId = o1.Id, PricebookEntryId = pbe.Id, Quantity=20, UnitPrice = 1000);
-        insert oi2;        
+@isTest public class TestUpdateAccountCA {
+    
+    @isTest static void updateAccountWithOneOrder() {
+        // Create an account
+        Account acc = new Account(Name = 'Test Account', Chiffre_d_affaire__c = 10000);
+        insert acc;
+        
+        // Create a priceBookEntry
+        PriceBookEntry pbe = TestDataFactory.createPriceBookEntry();
+        
+        // Create a new order associated to the account
+        Order newOrder = TestDataFactory.createOrder(acc.Id);
+        
+        // Create an order product: totalAmount is equal to 1500
+        OrderItem item = new OrderItem (OrderId = newOrder.Id, PricebookEntryId = pbe.Id, Quantity=10, UnitPrice = 150);
+        insert item;
+        
+        // Update the order to set it status to 'ordered'
+        Test.startTest();
+        newOrder.status = 'ordered';
+        update newOrder;
+        Test.stopTest();
+        
+        // Check the account's CA
+        Account accCA = [ SELECT chiffre_d_affaire__c FROM Account WHERE Id = :acc.Id ]; 
+        
+        // Assertion: new CA is equal to 11500
+        System.assertEquals(11500, accCA.Chiffre_d_affaire__c);
     }
 }

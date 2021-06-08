@@ -1,0 +1,47 @@
+{
+  "summary": {
+    "outcome": "Skipped",
+    "testsRan": 1,
+    "passing": 0,
+    "failing": 0,
+    "skipped": 1,
+    "passRate": "0%",
+    "failRate": "0%",
+    "skipRate": "100%",
+    "testStartTime": "Tue Jun 08 2021 09:50:18",
+    "testExecutionTimeInMs": 0,
+    "testTotalTimeInMs": 0,
+    "commandTimeInMs": 230,
+    "hostname": "https://resilient-otter-1prld4-dev-ed.my.salesforce.com",
+    "orgId": "00D09000007luNjEAI",
+    "username": "c.delfino@resilient-otter-1prld4.com",
+    "testRunId": "7070900000J7QkD",
+    "userId": "00509000006mONWAA2"
+  },
+  "tests": [
+    {
+      "id": "07M09000000i6zcEAA",
+      "queueItemId": "70909000000sxzjAAA",
+      "stackTrace": null,
+      "message": "Method updateAccountWithOneOrder does not exist in the the apex class with Id :01p0900000IpxJZ",
+      "asyncApexJobId": "7070900000J7QkDAAV",
+      "methodName": "updateAccountWithOneOrder",
+      "outcome": "Skip",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p0900000IpxJZAAZ",
+        "name": "TestUpdateAccountCA",
+        "namespacePrefix": null,
+        "fullName": "TestUpdateAccountCA"
+      },
+      "runTime": 0,
+      "testTimestamp": "2021-06-08T07:50:18.000+0000",
+      "fullName": "TestUpdateAccountCA.updateAccountWithOneOrder",
+      "diagnostic": {
+        "exceptionMessage": "Method updateAccountWithOneOrder does not exist in the the apex class with Id :01p0900000IpxJZ",
+        "exceptionStackTrace": null,
+        "compileProblem": ""
+      }
+    }
+  ]
+}
