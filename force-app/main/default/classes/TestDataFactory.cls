@@ -1,5 +1,14 @@
 @isTest
 public class TestDataFactory {
+
+    // Create an account
+    public static Account createAnAccount(String name, boolean doInsert) {
+        Account acc = new Account(Name = name);
+        if(doInsert) {
+            Insert acc;
+        }
+        return acc;
+    }
     
     // Create a priceBookEntry
     public static PriceBookEntry createPriceBookEntry() {

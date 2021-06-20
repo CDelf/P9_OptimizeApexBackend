@@ -1,0 +1,42 @@
+{
+  "summary": {
+    "outcome": "Passed",
+    "testsRan": 1,
+    "passing": 1,
+    "failing": 0,
+    "skipped": 0,
+    "passRate": "100%",
+    "failRate": "0%",
+    "skipRate": "0%",
+    "testStartTime": "Tue Jun 15 2021 09:32:38",
+    "testExecutionTimeInMs": 218,
+    "testTotalTimeInMs": 218,
+    "commandTimeInMs": 128,
+    "hostname": "https://resilient-otter-1prld4-dev-ed.my.salesforce.com",
+    "orgId": "00D09000007luNjEAI",
+    "username": "c.delfino@resilient-otter-1prld4.com",
+    "testRunId": "7070900000JvPef",
+    "userId": "00509000006mONWAA2"
+  },
+  "tests": [
+    {
+      "id": "07M09000000iENREA2",
+      "queueItemId": "70909000000symwAAA",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7070900000JvPefAAF",
+      "methodName": "updateOneOrder",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p0900000IrOGuAAN",
+        "name": "TestCalculateAmount",
+        "namespacePrefix": null,
+        "fullName": "TestCalculateAmount"
+      },
+      "runTime": 218,
+      "testTimestamp": "2021-06-15T07:32:39.000+0000",
+      "fullName": "TestCalculateAmount.updateOneOrder"
+    }
+  ]
+}
