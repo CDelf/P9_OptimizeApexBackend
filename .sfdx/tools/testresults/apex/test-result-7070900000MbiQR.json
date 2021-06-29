@@ -1,0 +1,42 @@
+{
+  "summary": {
+    "outcome": "Passed",
+    "testsRan": 1,
+    "passing": 1,
+    "failing": 0,
+    "skipped": 0,
+    "passRate": "100%",
+    "failRate": "0%",
+    "skipRate": "0%",
+    "testStartTime": "Mon Jun 28 2021 12:49:44",
+    "testExecutionTimeInMs": 16,
+    "testTotalTimeInMs": 16,
+    "commandTimeInMs": 92,
+    "hostname": "https://resilient-otter-1prld4-dev-ed.my.salesforce.com",
+    "orgId": "00D09000007luNjEAI",
+    "username": "c.delfino@resilient-otter-1prld4.com",
+    "testRunId": "7070900000MbiQR",
+    "userId": "00509000006mONWAA2"
+  },
+  "tests": [
+    {
+      "id": "07M09000000iQlLEAU",
+      "queueItemId": "70909000000szkIAAQ",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7070900000MbiQRAAZ",
+      "methodName": "tryToUpdateEmptyList",
+      "outcome": "Pass",
+      "apexLogId": "07L09000003fRsMEAU",
+      "apexClass": {
+        "id": "01p0900000KFwVUAA1",
+        "name": "TestAccounts",
+        "namespacePrefix": null,
+        "fullName": "TestAccounts"
+      },
+      "runTime": 16,
+      "testTimestamp": "2021-06-28T10:49:44.000+0000",
+      "fullName": "TestAccounts.tryToUpdateEmptyList"
+    }
+  ]
+}

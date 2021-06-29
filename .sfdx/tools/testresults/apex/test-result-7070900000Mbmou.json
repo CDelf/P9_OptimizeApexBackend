@@ -1,0 +1,50 @@
+{
+  "summary": {
+    "outcome": "Failed",
+    "testsRan": 1,
+    "passing": 0,
+    "failing": 1,
+    "skipped": 0,
+    "passRate": "0%",
+    "failRate": "100%",
+    "skipRate": "0%",
+    "testStartTime": "Mon Jun 28 2021 15:46:02",
+    "testExecutionTimeInMs": 480,
+    "testTotalTimeInMs": 480,
+    "commandTimeInMs": 104,
+    "hostname": "https://resilient-otter-1prld4-dev-ed.my.salesforce.com",
+    "orgId": "00D09000007luNjEAI",
+    "username": "c.delfino@resilient-otter-1prld4.com",
+    "testRunId": "7070900000Mbmou",
+    "userId": "00509000006mONWAA2"
+  },
+  "tests": [
+    {
+      "id": "07M09000000iQqGEAU",
+      "queueItemId": "70909000000szkxAAA",
+      "stackTrace": "Class.Accounts.updateAccountCA: line 16, column 1\nClass.UpdateAccounts.execute: line 11, column 1",
+      "message": "System.SObjectException: SObject row was retrieved via SOQL without querying the requested field: Account.Chiffre_d_affaire__c",
+      "asyncApexJobId": "7070900000MbmouAAB",
+      "methodName": "testUpdateAnAccount",
+      "outcome": "Fail",
+      "apexLogId": "07L09000003fTPCEA2",
+      "apexClass": {
+        "id": "01p0900000KEpHxAAL",
+        "name": "TestUpdateAccounts",
+        "namespacePrefix": null,
+        "fullName": "TestUpdateAccounts"
+      },
+      "runTime": 480,
+      "testTimestamp": "2021-06-28T13:46:03.000+0000",
+      "fullName": "TestUpdateAccounts.testUpdateAnAccount",
+      "diagnostic": {
+        "exceptionMessage": "System.SObjectException: SObject row was retrieved via SOQL without querying the requested field: Account.Chiffre_d_affaire__c",
+        "exceptionStackTrace": "Class.Accounts.updateAccountCA: line 16, column 1\nClass.UpdateAccounts.execute: line 11, column 1",
+        "className": "Accounts",
+        "compileProblem": "",
+        "lineNumber": 16,
+        "columnNumber": 1
+      }
+    }
+  ]
+}

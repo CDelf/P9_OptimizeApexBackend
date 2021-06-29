@@ -1,0 +1,42 @@
+{
+  "summary": {
+    "outcome": "Passed",
+    "testsRan": 1,
+    "passing": 1,
+    "failing": 0,
+    "skipped": 0,
+    "passRate": "100%",
+    "failRate": "0%",
+    "skipRate": "0%",
+    "testStartTime": "Mon Jun 28 2021 16:23:02",
+    "testExecutionTimeInMs": 205,
+    "testTotalTimeInMs": 205,
+    "commandTimeInMs": 88,
+    "hostname": "https://resilient-otter-1prld4-dev-ed.my.salesforce.com",
+    "orgId": "00D09000007luNjEAI",
+    "username": "c.delfino@resilient-otter-1prld4.com",
+    "testRunId": "7070900000Mbo8k",
+    "userId": "00509000006mONWAA2"
+  },
+  "tests": [
+    {
+      "id": "07M09000000iQrnEAE",
+      "queueItemId": "70909000000szlWAAQ",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7070900000Mbo8kAAB",
+      "methodName": "testUpdateAnAccount",
+      "outcome": "Pass",
+      "apexLogId": "07L09000003fTiyEAE",
+      "apexClass": {
+        "id": "01p0900000KEpHxAAL",
+        "name": "TestUpdateAccounts",
+        "namespacePrefix": null,
+        "fullName": "TestUpdateAccounts"
+      },
+      "runTime": 205,
+      "testTimestamp": "2021-06-28T14:23:03.000+0000",
+      "fullName": "TestUpdateAccounts.testUpdateAnAccount"
+    }
+  ]
+}

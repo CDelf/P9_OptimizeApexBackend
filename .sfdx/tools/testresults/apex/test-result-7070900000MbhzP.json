@@ -1,0 +1,42 @@
+{
+  "summary": {
+    "outcome": "Passed",
+    "testsRan": 1,
+    "passing": 1,
+    "failing": 0,
+    "skipped": 0,
+    "passRate": "100%",
+    "failRate": "0%",
+    "skipRate": "0%",
+    "testStartTime": "Mon Jun 28 2021 12:34:04",
+    "testExecutionTimeInMs": 472,
+    "testTotalTimeInMs": 472,
+    "commandTimeInMs": 82,
+    "hostname": "https://resilient-otter-1prld4-dev-ed.my.salesforce.com",
+    "orgId": "00D09000007luNjEAI",
+    "username": "c.delfino@resilient-otter-1prld4.com",
+    "testRunId": "7070900000MbhzP",
+    "userId": "00509000006mONWAA2"
+  },
+  "tests": [
+    {
+      "id": "07M09000000iQkSEAU",
+      "queueItemId": "70909000000szk3AAA",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7070900000MbhzPAAR",
+      "methodName": "updateAccountWithOneOrder",
+      "outcome": "Pass",
+      "apexLogId": "07L09000003fRkcEAE",
+      "apexClass": {
+        "id": "01p0900000IpxJZAAZ",
+        "name": "TestUpdateAccountCA",
+        "namespacePrefix": null,
+        "fullName": "TestUpdateAccountCA"
+      },
+      "runTime": 472,
+      "testTimestamp": "2021-06-28T10:34:05.000+0000",
+      "fullName": "TestUpdateAccountCA.updateAccountWithOneOrder"
+    }
+  ]
+}
