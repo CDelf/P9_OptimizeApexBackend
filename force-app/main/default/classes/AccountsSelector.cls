@@ -8,7 +8,8 @@ public with sharing class AccountsSelector {
         return accList;
     }
 
-    // Query for batch
+    // Query for UpdateAccounts batch 
+    // Search for accounts having at least one ordered order
     public static String queryAccountsWithOrderedOrders() {
         String query = 'SELECT Id, Chiffre_d_affaire__c FROM Account WHERE Id IN (SELECT AccountId FROM Order WHERE Status = \'Ordered\') ';
         return query;

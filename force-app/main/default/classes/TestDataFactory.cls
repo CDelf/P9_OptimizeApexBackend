@@ -1,15 +1,6 @@
 @isTest
 public class TestDataFactory {
     
-    // Create an account
-    public static Account createAccount(String name, boolean doInsert) {
-        Account acc = new Account(Name = name);
-        if(doInsert) {
-            Insert acc;
-        }
-        return acc;
-    }
-    
     // Create a priceBookEntry
     public static PriceBookEntry createPriceBookEntry() {
         Product2 product = new Product2(Name = 'Chemise Verte longue XYX', Family = 'Chemise');
@@ -63,6 +54,33 @@ public class TestDataFactory {
             items.add(item);
         }
         insert items;     
+        // Activate the orders
+        for(Order newOrder : newOrders) {
+            newOrder.Status = 'ordered';
+        }
+        update newOrders;
+        return newOrders;
+    }
+    
+    // Create an ordered order with multiple products
+    public static List<Order> createMultipleProductsOrders(Id accountId, Integer numOrders, Integer numProducts){
+        List<Order> newOrders = new List<Order>();
+        for(Integer i=0; i<numOrders; i++) {
+            Order newOrder = TestDataFactory.createOrder(accountId, false);
+            newOrders.add(newOrder);
+        }
+        insert newOrders;
+        // Create a priceBookEntry
+        PriceBookEntry pbe = TestDataFactory.createPriceBookEntry();
+        // Create order products : each product add 50 to order TotalAmount 
+        List<OrderItem> items = new List<OrderItem>();
+        for(Order newOrder : newOrders) {
+            for(Integer j=0; j<numProducts; j++) {
+                OrderItem item = new OrderItem (OrderId = newOrder.Id, PricebookEntryId = pbe.Id, Quantity=5, UnitPrice = 10);
+                items.add(item);
+            } 
+        }   
+        insert items;
         // Activate the orders
         for(Order newOrder : newOrders) {
             newOrder.Status = 'ordered';

@@ -1,0 +1,47 @@
+{
+  "summary": {
+    "outcome": "Skipped",
+    "testsRan": 1,
+    "passing": 0,
+    "failing": 0,
+    "skipped": 1,
+    "passRate": "0%",
+    "failRate": "0%",
+    "skipRate": "100%",
+    "testStartTime": "Sun Jul 04 2021 11:44:35",
+    "testExecutionTimeInMs": 0,
+    "testTotalTimeInMs": 0,
+    "commandTimeInMs": 99,
+    "hostname": "https://resilient-otter-1prld4-dev-ed.my.salesforce.com",
+    "orgId": "00D09000007luNjEAI",
+    "username": "c.delfino@resilient-otter-1prld4.com",
+    "testRunId": "7070900000MeqVi",
+    "userId": "00509000006mONWAA2"
+  },
+  "tests": [
+    {
+      "id": "07M09000000iV8dEAE",
+      "queueItemId": "70909000000sztRAAQ",
+      "stackTrace": null,
+      "message": "Method updateTenOrdersAccountCA does not exist in the the apex class with Id :01p0900000KFwVU",
+      "asyncApexJobId": "7070900000MeqViAAJ",
+      "methodName": "updateTenOrdersAccountCA",
+      "outcome": "Skip",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p0900000KFwVUAA1",
+        "name": "TestAccounts",
+        "namespacePrefix": null,
+        "fullName": "TestAccounts"
+      },
+      "runTime": 0,
+      "testTimestamp": "2021-07-04T09:44:36.000+0000",
+      "fullName": "TestAccounts.updateTenOrdersAccountCA",
+      "diagnostic": {
+        "exceptionMessage": "Method updateTenOrdersAccountCA does not exist in the the apex class with Id :01p0900000KFwVU",
+        "exceptionStackTrace": null,
+        "compileProblem": ""
+      }
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 public with sharing class Accounts {
     
     public static List<Account> updateAccountCA(List<Account> accsToUpdate) {
-        // Create a list of accounts from their ids
+        // If the account list is empty, throw an exception
         if(accsToUpdate.size()==0) {
             throw new AccountDomainException('No Account Specified');
         } else {

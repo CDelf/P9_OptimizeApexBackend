@@ -10,8 +10,7 @@ global class UpdateAccounts implements Database.Batchable<sObject>{
    global void execute(Database.BatchableContext info, List<Account> scope){      
       Accounts.updateAccountCA(scope);
    }    
-    
-   global void finish(Database.BatchableContext info){     
-       
+   
+   global void finish(Database.BatchableContext info){            
    } 
 }
