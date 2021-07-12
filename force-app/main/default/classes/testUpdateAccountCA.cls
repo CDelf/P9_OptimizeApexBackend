@@ -21,7 +21,7 @@
         Test.stopTest();
         // Check the account's CA
         Account accCA = [ SELECT chiffre_d_affaire__c FROM Account WHERE Id = :acc.Id ]; 
-        // Assertion: new CA is equal to 10000 + 10*10 = 1100
+        // Assertion: new CA is equal to 10000 + 10*10 = 10100
         System.assertEquals(10100, accCA.Chiffre_d_affaire__c);
     }
     
@@ -33,11 +33,23 @@
         List<Order> accOrders = TestDataFactory.createOrdersOnAccount(110, acc.Id);
         Test.stopTest(); 
         // Check the account's CA
-        Account accCA = [ SELECT chiffre_d_affaire__c FROM Account WHERE Id = :acc.Id ]; 
+        Account accCA = [SELECT chiffre_d_affaire__c FROM Account WHERE Id = :acc.Id]; 
         // Assertion: new CA is equal to 10000 + 110*100 = 21000
         System.assertEquals(21000, accCA.Chiffre_d_affaire__c);      
+    }    
+    
+    @isTest static void updateAccOrderWithMoreThanTwoHundredOtherOrders() {
+        // Get the account
+        Account acc = TestUpdateAccountCA.findAccount();
+        Test.startTest();
+        // Create a list of orders with one already inserted then updated order, with ordered status
+        List<Order> accOrders = TestDataFactory.createOrdersOnAccount(200, acc.Id);
+        Test.stopTest(); 
+        // Check the account's CA
+        Account accCA = [ SELECT chiffre_d_affaire__c FROM Account WHERE Id = :acc.Id ]; 
+        // Assertion: new CA is equal to 10000 + 100*200
+        System.assertEquals(30000, accCA.Chiffre_d_affaire__c);      
     }
-
     @isTest static void updateAccOrdersWithMultipleProducts() {
         // Get the account
         Account acc = TestUpdateAccountCA.findAccount();

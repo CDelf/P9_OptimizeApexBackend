@@ -1,10 +1,15 @@
 <apex:page controller="MyTeamOrdersController">
-    <apex:pageBlock Title = "Amounts by Owner">
- 
+    <!-- List of salers and sum of their orders amounts -->
+    <apex:pageBlock Title = "Results by Owner">
+        <apex:pageBlockTable value="{!getOrders}" var="o">
+            <apex:column value="{!o['ownerName']}"/>
+            <apex:column value="{!o['totalAmount']}"/>
+        </apex:pageBlockTable>
     </apex:pageBlock>
-    <apex:pageBlock Title = "Sum of orders amounts">
+    <!-- Total orders amounts of the team -->   
+    <apex:pageBlock Title = "Team Results">
         <apex:pageBlockSection>   
-            <apex:outputText value="{!SumOders}" />
+            <apex:outputText value="{!sumOrders}" />
         </apex:pageBlockSection>
     </apex:pageBlock>
 </apex:page>

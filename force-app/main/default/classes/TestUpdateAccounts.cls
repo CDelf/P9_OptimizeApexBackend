@@ -38,7 +38,7 @@
         Test.stopTest();
         // Check accounts CA
         List<Account> accsCA = [SELECT Chiffre_d_affaire__c FROM Account WHERE Id IN :accs ];
-        // Assertions
+        // Assertion : new CA is equal to 10000 + 10*10
         for(Account acc : accsCA) {
             System.assertEquals(10100, acc.Chiffre_d_affaire__c);
         }

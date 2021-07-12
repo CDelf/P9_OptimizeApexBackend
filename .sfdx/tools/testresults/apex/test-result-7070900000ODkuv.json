@@ -1,0 +1,61 @@
+{
+  "summary": {
+    "outcome": "Passed",
+    "testsRan": 2,
+    "passing": 2,
+    "failing": 0,
+    "skipped": 0,
+    "passRate": "100%",
+    "failRate": "0%",
+    "skipRate": "0%",
+    "testStartTime": "Mon Jul 12 2021 11:14:49",
+    "testExecutionTimeInMs": 1568,
+    "testTotalTimeInMs": 1568,
+    "commandTimeInMs": 135,
+    "hostname": "https://resilient-otter-1prld4-dev-ed.my.salesforce.com",
+    "orgId": "00D09000007luNjEAI",
+    "username": "c.delfino@resilient-otter-1prld4.com",
+    "testRunId": "7070900000ODkuv",
+    "userId": "00509000006mONWAA2"
+  },
+  "tests": [
+    {
+      "id": "07M09000000ieyiEAA",
+      "queueItemId": "70909000000t0sjAAA",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7070900000ODkuvAAD",
+      "methodName": "testChangeProductsUnitPrice",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p0900000KHL0QAAX",
+        "name": "TestUpdateAccounts",
+        "namespacePrefix": null,
+        "fullName": "TestUpdateAccounts"
+      },
+      "runTime": 954,
+      "testTimestamp": "2021-07-12T09:14:49.000+0000",
+      "fullName": "TestUpdateAccounts.testChangeProductsUnitPrice"
+    },
+    {
+      "id": "07M09000000ieyjEAA",
+      "queueItemId": "70909000000t0sjAAA",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7070900000ODkuvAAD",
+      "methodName": "testUpdateTenAccounts",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p0900000KHL0QAAX",
+        "name": "TestUpdateAccounts",
+        "namespacePrefix": null,
+        "fullName": "TestUpdateAccounts"
+      },
+      "runTime": 614,
+      "testTimestamp": "2021-07-12T09:14:50.000+0000",
+      "fullName": "TestUpdateAccounts.testUpdateTenAccounts"
+    }
+  ]
+}

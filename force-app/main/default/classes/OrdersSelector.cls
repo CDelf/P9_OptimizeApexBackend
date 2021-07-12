@@ -5,5 +5,5 @@ public with sharing class OrdersSelector {
         list<Order> listOrders =  [SELECT Id, TotalAmount, AccountId, Account.Chiffre_d_affaire__c 
                                    FROM Order WHERE AccountId IN :accList];
         return listOrders;
-    }
+    } 
 }
