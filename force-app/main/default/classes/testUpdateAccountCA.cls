@@ -38,7 +38,7 @@
         System.assertEquals(21000, accCA.Chiffre_d_affaire__c);      
     }    
     
-    @isTest static void updateAccOrderWithMoreThanTwoHundredOtherOrders() {
+    @isTest static void updateAccOrderWithTwoHundredOtherOrders() {
         // Get the account
         Account acc = TestUpdateAccountCA.findAccount();
         Test.startTest();
